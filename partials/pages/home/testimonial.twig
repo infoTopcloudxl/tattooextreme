@@ -1,0 +1,83 @@
+<section id="testimonial"
+         data-scrolloffset="70"
+         class="rex-testimonial"
+         data-parallax="scroll"
+         data-image-src="{{ asset('/assets/src/images/tes-bg.jpg') }}"
+ >
+    <div class="container">
+        <div class="rex-heading">
+            
+            {{
+                widget('content', 'testimonials-content1', {
+                    content: '<h3>Wat klanten vinden</h3>'
+                })|raw
+            }}
+            
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div id="rex-testimonial" class="owl-carousel">
+                    <div class="rx-active">
+                        <div class="rex-content-img">
+                            <img src="{{ asset('/assets/src/images/rex-testimonial-img-1.png') }}" alt="" width="73px" height="74px">
+                        </div>
+                        
+                        <h4><span>Larissa Herbst</span></h4>
+                        <p>
+                           <strong> Thanks ben er super blij mee! tot de volgende keer! </strong>
+                        </p>
+                    </div>
+                    
+                    <div class="rx-active">
+                        <div class="rex-content-img">
+                            <img src="{{ asset('/assets/src/images/rex-testimonial-img-2.png') }}" alt="" width="73px" height="74px">
+                        </div>
+                        
+                        <h4><span>Ashley Kleintjee</span></h4>
+                        <p>
+                            <strong>Prettige sfeer ,professionele werk wijze..top locatie en mooi eindresultaat xxx</strong>     
+                       </p>
+                    </div>
+                    
+                    <div class="rx-active">
+                        <div class="rex-content-img">
+                            <img src="{{ asset('/assets/src/images/rex-testimonial-img-3.png') }}" alt="" width="73px" height="74px">
+                        </div>
+                        
+                        <h4><span>Ivar Schipper</span></h4>
+                        <p>
+                            <strong>Erg klantvriendelijk en gezellig maar tegelijkertijd zeer professioneel!
+                            Zelfde dag hadden we al een afspraak en we konden de tattoo direct laten zetten!
+                            Zou je graag een tattoo willen zetten, ga dan zeker langs bij Xtremetattoo Dave</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="rx-active">
+                        <div class="rex-content-img">
+                            <img src="{{ asset('/assets/src/images/rex-testimonial-img-4.png') }}" alt="" width="73px" height="74px">
+                        </div>
+                        
+                        <h4><span>Marielle van den Heuvel</span></h4>
+                        <p>
+                            <strong>Super toffe kerel Lekker geselli altijd lachen met hem 
+                            ff gek doen Kan super mooie tattoos maken Dus binnenkort weer ff terug xx</strong>                       
+                        </p>
+                    </div>
+                    
+                    <div class="rx-active">
+                        <div class="rex-content-img">
+                            <img src="{{ asset('/assets/src/images/rex-testimonial-img-5.png') }}" alt="" width="73px" height="74px">
+                        </div>
+                        
+                        <h4><span>Cynthia van der Velde</span></h4>
+                        <p>
+                            <strong>Echt super bedankt dave voor de mooie diamant 
+                                    die je hebt gezet op me schouder!</strong>                       
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

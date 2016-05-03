@@ -1,0 +1,88 @@
+<!-- Header start -->
+<header id="header">
+  <div class="container">
+      <!-- Header Top Area -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Phone & email addres -->
+        <div class="rex-addres-section">
+          <a href="tel:{{ profile.phone }}">
+            <i class="fa fa-phone"></i>
+            {{ profile.phone }}
+          </a>
+          <a href="mailto:{{ profile.email }}">
+            <i class="fa fa-paper-plane-o"></i>
+            {{ profile.email }}
+          </a>
+        </div>
+        <!-- end Phone & email addres -->
+
+        <!-- media-link start -->
+        <div class="rex-media-link">
+        {{widget('content', 'site-header-social-links', {
+          content: '
+          <a href="https://www.facebook.com/xtremetattoo.spijkenisse/?fref=ts target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          '
+        })|raw}}
+        </div>
+        <!-- End media link -->
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End header top section -->
+
+  <!-- nav start -->
+  <nav id="rex-sticke-nav" class="nav-fixed-top">
+    <div class="container">
+      <div class="row select-row">
+        <div class="col-md-3 col-sm-12">
+          <!-- brand logo -->
+          <div class="rex-logo">
+            {{
+                widget('image', 'headerimage', {
+                  'src': asset('/assets/src/images/logo.png'),
+                  'alt': 'The alternate text',
+                  'fileName': 'Logo Image',
+                  'fileSize': 3,
+                  'imageSize': '150 x 40',
+                  'imageWidth': '140'
+                })|raw
+            }}
+          </div>
+        </div>
+        <!-- end logo -->
+
+        <div class="col-md-9 col-sm-12 col-nav">
+          <!-- Navigation Area -->
+          <div class="content">
+            <div class="rex-navigation-area">
+              <ul id="rex-navigation" class="slimmenu cl-effect-5" data-0="margin-top:50px;" data-300="margin-top:35px;">
+                    <li>
+                        <a href="#about">Welkom</a>
+                    </li>
+                    <li>
+                        <a href="#feature">Tattoos & Piercings</a>
+                    </li>
+                    <li>
+                        <a href="#team">Wie ben ik</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial">Recenties</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end Navigation Area -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- End header section -->

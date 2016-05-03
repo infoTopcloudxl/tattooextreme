@@ -1,0 +1,81 @@
+<section class="footer-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-3 col-sm-6">
+                <div class="footer-logo-area wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.2s">
+                    {{
+                        widget('image', 'footerrimage', {
+                        'src': asset('/assets/src/images/logo.png'),
+                        'fileName': 'Logo Image',
+                          'fileSize': 3,
+                          'imageSize': '150 x 40',
+                          'imageWidth': '140'
+                        })|raw
+                    }}
+                    
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 col-sm-6">
+                <div class="content wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.4s">
+                    <div class="title">
+                        <h4>contact </h4>
+                        <article>
+                            <a href="tel:{{ profile.phone }}">
+                                <i class="fa fa-phone"></i>
+                                {{ profile.phone }}
+                            </a>
+                            <a href="mailto:info@rextheme.com">
+                                <i class="fa fa-paper-plane-o"></i>
+                                {{ profile.email }}
+                            </a>
+                            <div class="address">
+                                <i class="pe-7s-map-marker"></i>
+                                <p>
+                                    Oberonweg 254 <br /> 3208PG Spijkenisse
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-3 col-sm-6">
+                <div class="content wow zoomIn"  data-wow-duration="1.2s" data-wow-delay="0.8s">
+                    <div class="title">
+                        <h4>Openingstijden</h4>
+                            <div class="address">
+                                <p>
+                                    Maandag: 14:00 - 22:00 <br />
+                                    Dinsdag: 14:00 - 22:00 <br />
+                                    Woensdag: 14:00 - 22:00 <br />
+                                    Donderdag: 14:00 - 22:00 <br />
+                                    Vrijdag: 14:00 - 22:00 <br />
+                                    Zaterdag: 14:00 - 21:00 <br />
+                                    Zondag: Gesloten
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{widget('content', 'site-footer-copyright', {
+                    content:
+                    '<p> Tattoo Xtreme Copyright &copy; 2016 - All Rights Reserved</p>'
+                })|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+<section class="socket">
+    <div class="backtop" style="display: block;">
+        <a href="#top"><i class="fa fa-angle-up"></i></a>
+    </div>
+</section>

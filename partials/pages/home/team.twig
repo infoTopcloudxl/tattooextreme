@@ -1,0 +1,52 @@
+<section id="team" data-scrolloffset="50" class="rex-team container">
+    <div class="rex-heading">
+        {{
+            widget('content', 'team-content1', {
+                content: '<h3> Wie ben ik </h3>'
+            })|raw
+        }}
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 col-sm-4 padding-right">
+            <div class="rex-top-lawyer wow fadeInUp"  data-wow-duration="1s" data-wow-delay="0.8s">
+                {{
+                    widget('image', 'team-image1', {
+                        src: asset('/assets/src/images/ik.jpg'),
+                        alt: '',
+                        fileSize: 3,
+                        imageWidth: '100%',
+                    })|raw
+                }}
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-8">
+            <div class="rex-team-content wow fadeInUp"  data-wow-duration="1" data-wow-delay="0.8s">
+                <div class="rex-team-text">
+                    {{
+                        widget('content', 'team-content2', {
+                            content: '<h4> Wie ben ik? </h4>
+                            <p>
+                                Ik zal mij even voorstellen, mijn naam is Dave.
+                            <br>
+                                Sinds 1998 ben ik begonnen met tatoeëren in Rotterdam, 
+                                dit is tevens mijn geboorte stad.
+                            <br>
+                                Ik tatoeëer met veel passie en plezier, 
+                                in verschillende stijlen tegen scherpe prijzen.
+                            <br>
+                                Heb je vragen over een tattoo ontwerp of wil je weten wat jouw tattoo kost, 
+                                neem dan contact met ons op.
+                            </p>'
+                        })|raw
+                    }}
+                    <img class="coffie" src="{{ asset('/assets/src/images/nail.png') }}" alt="">
+                    <div class="lawyer-social-media">
+                        <img src="{{ asset('/assets/src/images/sign.png') }}" alt="">
+                            </a>
+                           </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
