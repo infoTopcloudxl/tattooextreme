@@ -1,0 +1,75 @@
+/*=========================================
+		About style
+===========================================*/
+
+.rex-about{
+    a {
+        color: red;
+    }
+	background: @rex-body;
+	// border-bottom: 1px solid @rex-boder-color;
+	// padding-top: 6%;
+	.rex-about-img{
+		padding-top: 100px;
+	}
+	.rex-about-text{
+		padding-left: 10%;
+	    padding-top: 100px;
+	    padding-bottom: 113px;
+	}
+	h3{
+		font-weight: 700;
+	}
+	p{
+		color: @rex-text-color;
+		line-height: 24px;
+	}
+    #polaroid {
+    padding: 20px 10px;
+    width: 100%;
+    overflow: hidden;
+    
+    figure {
+        float: left;
+        position: relative;
+        margin: 10px 20px;
+        padding: 6px 8px 10px;
+        background: #eee6d8;
+        background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+        box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, .75);
+        transform: rotate(-5deg);
+        
+        &:nth-child(even) {
+            transform: rotate(2deg);
+            box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, .75);
+        }
+        
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 5px;
+            top: -15px;
+            width: 75px;
+            height: 25px;
+            background-color: rgba(222, 220, 198, .7);
+        }
+        
+        &:nth-child(even):before {
+            left: 150px;
+            top: -15px;
+            width: 55px;
+            height: 25px;
+        }
+    }
+    
+    figcaption {
+        text-align: center;
+        font-family: 'Reenie Beanie', 'cursive';
+        font-size: 1.3em;
+        color: #454f40;
+        letter-spacing: 0.09em;
+        padding: 16px 0;
+    }
+}
+}
